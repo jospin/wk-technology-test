@@ -17,7 +17,7 @@ public class Candidates {
     @JsonProperty("cpf")
     private String cpf;
     @JsonProperty("rg")
-    private String document;
+    private String rg;
     @JsonProperty("data_nasc")
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate birthDate;
@@ -32,7 +32,7 @@ public class Candidates {
     @JsonProperty("cep")
     private String zipcode;
     @JsonProperty("endereco")
-    private String address;
+    private String street;
     @JsonProperty("numero")
     private Integer number;
     @JsonProperty("bairro")

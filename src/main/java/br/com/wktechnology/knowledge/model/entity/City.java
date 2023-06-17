@@ -1,6 +1,7 @@
 package br.com.wktechnology.knowledge.model.entity;
 
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,6 +9,7 @@ import java.util.List;
 
 @Entity(name = "city")
 @Getter
+@Builder
 @Setter
 public class City {
 

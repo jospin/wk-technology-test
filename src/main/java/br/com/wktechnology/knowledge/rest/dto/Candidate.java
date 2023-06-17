@@ -11,7 +11,7 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @AllArgsConstructor
-public class Candidates {
+public class Candidate {
     @JsonProperty("nome")
     private String name;
     @JsonProperty("cpf")

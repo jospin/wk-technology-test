@@ -8,9 +8,9 @@ import org.springframework.stereotype.Component;
 public class CityMapper implements Mapper<City, Candidate> {
     @Override
     public City toModel(Candidate dto) {
-        return City.builder()
-                .name(dto.getCity())
-                .build();
+        City city = new City();
+        city.setName(dto.getCity());
+        return city;
     }
 
     @Override

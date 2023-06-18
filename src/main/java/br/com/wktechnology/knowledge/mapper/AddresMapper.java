@@ -8,12 +8,12 @@ import org.springframework.stereotype.Component;
 public class AddresMapper implements Mapper<Address, Candidate> {
     @Override
     public Address toModel(Candidate candidate) {
-        return Address.builder()
-                .street(candidate.getStreet())
-                .number(candidate.getNumber())
-                .neighborhood(candidate.getNeighborhood())
-                .zipcode(candidate.getZipcode())
-                .build();
+        Address address = new Address();
+        address.setStreet(candidate.getStreet());
+        address.setNumber(candidate.getNumber());
+        address.setNeighborhood(candidate.getNeighborhood());
+        address.setZipcode(candidate.getZipcode());
+        return address;
     }
 
     @Override

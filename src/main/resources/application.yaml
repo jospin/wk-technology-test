@@ -6,17 +6,9 @@ spring:
     username: sa
     password: password
     driverClassName: org.h2.Driver
-    platform: h2
-#  sql:
-#    init:
-#      mode: always
   jpa:
+    defer-datasource-initialization: true
     hibernate:
-      ddl-auto: create
-    database-platform: org.hibernate.dialect.H2Dialect
+      ddl-auto: create-drop
     show-sql: true
-  h2:
-    console:
-      enable: true
-      path: /h2-console
 

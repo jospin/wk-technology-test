@@ -32,4 +32,8 @@ public class DonationService {
     public void saveAll(List<Donator> donatorList) {
         repository.saveAll(donatorList);
     }
+
+    public List<Donator> listCandidates() {
+        return repository.findAll();
+    }
 }

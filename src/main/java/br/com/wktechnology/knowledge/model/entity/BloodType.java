@@ -1,10 +1,16 @@
 package br.com.wktechnology.knowledge.model.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.util.List;
 
 @Entity(name = "blood_type")
+@NoArgsConstructor
+@Getter
+@Setter
 public class BloodType {
 
     @Id

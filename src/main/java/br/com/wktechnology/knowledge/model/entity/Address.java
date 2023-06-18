@@ -3,11 +3,12 @@ package br.com.wktechnology.knowledge.model.entity;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity(name = "address")
 @Getter
-@Builder
+@NoArgsConstructor
 @Setter
 public class Address {
 

@@ -9,14 +9,14 @@ public class DonationMapper implements Mapper<Donator, Candidate> {
 
     @Override
     public Donator toModel(Candidate candidate) {
-        return Donator.builder()
-                .name(candidate.getName())
-                .father(candidate.getFather())
-                .birthDate(candidate.getBirthDate())
-                .height(candidate.getHeight())
-                .weight(candidate.getWeight())
-                .mother(candidate.getMother())
-                .build();
+        Donator donator = new Donator();
+        donator.setName(candidate.getName());
+        donator.setFather(candidate.getFather());
+        donator.setBirthDate(candidate.getBirthDate());
+        donator.setMother(candidate.getMother());
+        donator.setHeight(candidate.getHeight());
+        donator.setWeight(candidate.getWeight());
+        return donator;
     }
 
     @Override

@@ -47,22 +47,15 @@ public class InitializingState {
         createState("SE", "Sergipe");
         createState("TO", "Tocantins");
         createState("DF", "Distrito Federal");
-
-        List<State> states = repository.findAll();
-        states.stream().forEach(s -> System.out.println(s.getUf() + " " + s.getName()));
-
     }
 
     private void createState(String uf, String name) {
-        log.info("Find state with uf {}", uf);
         Optional<State> stateOptional = repository.findByUf(uf);
         if(stateOptional.isEmpty()) {
-            log.info("Not found then create state {} -> {}", uf, name);
             State state = new State();
             state.setUf(uf);
             state.setName(name);
             repository.save(state);
-            log.info("Sucess create {} ", state);
         }
     }
 

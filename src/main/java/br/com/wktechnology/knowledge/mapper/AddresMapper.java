@@ -16,8 +16,4 @@ public class AddresMapper implements Mapper<Address, Candidate> {
         return address;
     }
 
-    @Override
-    public Candidate toDto(Address model) {
-        return null;
-    }
 }

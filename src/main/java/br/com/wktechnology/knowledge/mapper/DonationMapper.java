@@ -18,9 +18,4 @@ public class DonationMapper implements Mapper<Donator, Candidate> {
         donator.setWeight(candidate.getWeight());
         return donator;
     }
-
-    @Override
-    public Candidate toDto(Donator model) {
-        return null;
-    }
 }

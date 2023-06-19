@@ -13,8 +13,4 @@ public class CityMapper implements Mapper<City, Candidate> {
         return city;
     }
 
-    @Override
-    public Candidate toDto(City model) {
-        return null;
-    }
 }

@@ -5,20 +5,18 @@ import br.com.wktechnology.knowledge.rest.dto.FormReport;
 import br.com.wktechnology.knowledge.rest.dto.ReportResult;
 import org.springframework.stereotype.Service;
 
-@Service("for-state-report")
-public class ForStateReportService implements ReportService {
+@Service("age-average-report-for-blood-type")
+public class AgeAverageReportForBloodType implements ReportService{
 
     private final DonationRepository repository;
-
-    ForStateReportService(DonationRepository repository) {
+    AgeAverageReportForBloodType(DonationRepository repository) {
         this.repository = repository;
     }
-
     @Override
     public ReportResult reportFactory(FormReport formReport) {
-        int amount = repository.donationForState(formReport.getUf());
+        double amount = repository.ageAverageForBloodType(formReport.getBloodType());
         ReportResult reportResult = new ReportResult();
-        reportResult.setAmount(amount);
+        reportResult.setAvg(amount);
         return reportResult;
     }
 }

@@ -8,4 +8,5 @@ import lombok.Setter;
 public class FormReport {
     private String uf;
     private AgeGroupEnumerator ageGroup;
+    private String bloodType;
 }

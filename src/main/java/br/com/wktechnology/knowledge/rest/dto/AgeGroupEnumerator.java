@@ -1,0 +1,15 @@
+package br.com.wktechnology.knowledge.rest.dto;
+
+public enum AgeGroupEnumerator {
+    ZEROADEZ,
+    DEZAVINTE,
+    VINTEATRINTA,
+    TRINTAAQUARENTA,
+    QUARENTAACINQUENTA,
+    CINQUENTAASESSENTA,
+    SESSENTAASETENTA,
+    SETANTEAOITENTA,
+    OITENTAANOVENTA,
+    NOVENTAACEM,
+    CEMACENTOEDEZ
+}
